@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body, main {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#hamburgerButton{
+  color: #FBFBFB;
+  padding: 20px;
+}
+.app-bar {
+  padding: 8px 16px;
+  background-color: #C36A2D;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+ 
+.app-bar .app-bar__brand {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  color: #FBFBFB;
+  text-transform: uppercase;
+  font-size: 20px;
+  user-select: none;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: #C36A2D;
+  overflow: hidden;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: none;
+  color: #FBFBFB;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.content {
+  padding: 32px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+
+}.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 1000000;
+}
+ 
+.skip-link:focus {
+   top: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 400px ;
+  width: 100%;
+  text-align: center;
+  background-position: center;
+}
+
+.hero_img {
+  min-width: fit-content;
+}
+
+h1{
+  padding-top: 16px;
+  text-align: center;
+  font-size: 25px;
+  color: #343434;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+main {
+  padding: 32px;
+  flex: 1;
+}
+ 
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+}
+ 
+.content .content__heading {
+  font-weight: normal;
+}
+
+.Restaurant {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+ 
+.Restaurant-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+ 
+.Restaurant-item__header {
+  position: relative;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+ 
+.Restaurant-item .Restaurant-item__header .Restaurant-item__header__picture{
+  width: 100%;
+}
+ 
+.Restaurant-item .Restaurant-item__header .Restaurant-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+ 
+.Restaurant-item .Restaurant-item__header .Restaurant-item__header__rating .Restaurant-item__header__rating__score {
+  margin-left: 10px;
+}
+ 
+.Restaurant-item .Restaurant-item__content {
+  padding: 16px;
+}
+ 
+.Restaurant-item .Restaurant-item__content h3 {
+  margin: 0 0 10px 0;
+}
+ 
+.Restaurant-item .Restaurant-item__content h3 a {
+  min-width: 44px;
+  min-height: 44px;
+  color: #C36A2D;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+ 
+.Restaurant-item .Restaurant-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Hind Siliguri', sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+}
+ 
+.Restaurant {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+ 
+.Restaurant .Restaurant__picture {
+  width: 100%;
+  max-width: 400px;
+}
+ 
+.Restaurant .Restaurant__info h4 {
+  margin: 8px 0;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #DEA057;
+  padding: 25px;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
